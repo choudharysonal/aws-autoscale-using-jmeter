@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <h1>List all courses in given room</h1>
+      <div>
+            <form method="post" action="/listcourses">
+                <input name="day" placeholder="Enter day"/>
+                <button type="submit" class="submitbtn" name="submit"/>
+            </form>
+      </div>
+      
+      <div>
+        <table>
+            <tr>
+                D's IP : {{ip}}
+            </tr>
+            <tr>
+                <th>Courses</th>
+            </tr>
+            {% for item in data %}
+            <tr>
+                <td>{{item}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+      </div>
+   </body>
+</html>

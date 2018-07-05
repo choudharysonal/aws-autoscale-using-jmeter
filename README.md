@@ -1,0 +1,2 @@
+# awsautoscale
+Python flask app deployed in AWS EC2 instance which stays behind the load balancer and auto scaling group. This application has been created to stress/load test with JMeter. The aim of the project is to analyze how AWS scales out or scale in automatically based on the average CPU utilization.
